@@ -1,0 +1,19 @@
+# EmulateIE
+#
+# Release 0.01 (Oct 22, 2011)
+#
+# Copyright (c) 2004-2011 Yujiro Araki
+
+id: EmulateIE
+name: EmulateIE
+version: 0.01
+author_link: http://www.koikikukan.com/
+author_name: Yujiro Araki
+plugin_link: http://www.koikikukan.com/archives/2011/10/22-005555.php
+doc_link: http://www.koikikukan.com/archives/2011/10/22-005555.php
+description: <__trans phrase="EmulateIE.">
+l10n_lexicon:
+    ja:
+        EmulateIE.: MT4をIE7、MT5をIE8のドキュメントモードで動作するようにします。
+callbacks:
+    MT::App::CMS::template_source.header: $EmulateIE::EmulateIE::CMS::add_meta
