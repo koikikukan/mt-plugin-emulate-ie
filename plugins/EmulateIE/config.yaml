@@ -1,19 +1,20 @@
 # EmulateIE
 #
-# Release 0.01 (Oct 22, 2011)
+# Release 0.02 (May 15, 2012)
 #
 # Copyright (c) 2004-2011 Yujiro Araki
+# English translation Copyright (C) 2012, After6 Services LLC.
 
 id: EmulateIE
 name: EmulateIE
-version: 0.01
+version: 0.02
 author_link: http://www.koikikukan.com/
 author_name: Yujiro Araki
 plugin_link: http://www.koikikukan.com/archives/2011/10/22-005555.php
 doc_link: http://www.koikikukan.com/archives/2011/10/22-005555.php
-description: <__trans phrase="EmulateIE.">
+description: <__trans phrase="EmulateIE instructs the more recent versions of Microsoft Internet Explorer to display Movable Type CMS pages in 'IE7 Standards Mode' for Movable Type 4.x and 'IE8 Standards Mode' for Movable Type 5.x.  See http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx for more information.">
 l10n_lexicon:
     ja:
-        EmulateIE.: MT4をIE7、MT5をIE8のドキュメントモードで動作するようにします。
+        EmulateIE instructs the more recent versions of Microsoft Internet Explorer to display Movable Type CMS pages in 'IE7 Standards Mode' for Movable Type 4.x and 'IE8 Standards Mode' for Movable Type 5.x.  See http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx for more information.: MT4をIE7、MT5をIE8のドキュメントモードで動作するようにします。
 callbacks:
     MT::App::CMS::template_source.header: $EmulateIE::EmulateIE::CMS::add_meta
